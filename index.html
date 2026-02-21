@@ -46,12 +46,12 @@
 
     </div>
     <div class="mt-6 ">
-      <button class="bg-blue-500 text-white font-semibold w-[80px] h-[32px] rounded-sm hover:focus:bg-blue-600"
-        id="interview-filter-btn">All</button>
-      <button
+      <button onclick="togglestyle('all-filter-btn')"
+        class="bg-blue-500 text-white font-semibold w-[80px] h-[32px] rounded-sm " id="all-filter-btn">All</button>
+      <button onclick="togglestyle('interview-filter-btn')"
         class="bg-white   text-gray-500 font-semibold w-[80px] h-[32px] shadow-rounded-sm shadow-slate-200 border border-gray-300 rounded-sm shadow-md"
-        id="all-filter-btn">Interview</button>
-      <button
+        id="interview-filter-btn">Interview</button>
+      <button onclick="togglestyle('rejected-filter-btn')"
         class="bg-white   text-gray-500 font-semibold w-[80px] h-[32px] shadow-rounded-sm shadow-slate-200 border border-gray-300 rounded-sm shadow-md"
         id="rejected-filter-btn">Rejected</button>
     </div>
