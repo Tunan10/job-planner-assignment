@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
+    integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="w-[70%] mx-auto mt-6   ">
+    <div>
+      <h1 class="text-blue-950  text-2xl  font-bold">Job Application Tracker</h1>
+      <div class="grid grid-cols-3 gap-[16px] mt-6 ">
+        <div class="  shadow-sm  p-4">
+          <p>Total</p>
+          <p id="total-count" class="font-bold pt-2">0</p>
+
+        </div>
+        <div class="  shadow-sm  p-4">
+          <p>Interview </p>
+          <p id="interview-count" class="text-green-500 font-bold pt-2">0</p>
+
+        </div>
+        <div class="  shadow-sm  p-4">
+          <p>Rejected</p>
+          <p id="rejected-count" class="text-red-500 font-bold pt-2">0</p>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <main class="w-[70%] mx-auto  mt-8  shadow-[0_-2px_0_0_rgba(107,114,128,0.1)]">
+    <div class="flex place-content-between pt-8">
+      <h2 class="font-semibold">Available Jobs</h2>
+      <p class="font-light">8 jobs</p>
+
+    </div>
+    <div class="mt-6 ">
+      <button class="bg-blue-500 text-white font-semibold w-[80px] h-[32px] rounded-sm hover:focus:bg-blue-600"
+        id="interview-filter-btn">All</button>
+      <button
+        class="bg-white   text-gray-500 font-semibold w-[80px] h-[32px] shadow-rounded-sm shadow-slate-200 border border-gray-300 rounded-sm shadow-md"
+        id="all-filter-btn">Interview</button>
+      <button
+        class="bg-white   text-gray-500 font-semibold w-[80px] h-[32px] shadow-rounded-sm shadow-slate-200 border border-gray-300 rounded-sm shadow-md"
+        id="rejected-filter-btn">Rejected</button>
+    </div>
+  </main>
+  <section id="All-job-card" class="w-[70%] mx-auto mt-6 mb-16">
+    <div class="card">
+      <div class="shadow-sm p-6 ">
+        <div class="grid grid-cols-2  place-content-between ">
+          <p class="font-semibold"> Mobile First Corp </p>
+          <button id="delet-btn" class="text-right ">delet</button>
+        </div>
+
+        <p class="text-gray-400">React Native Developer</p>
+        <p class="text-gray-400 mt-5">Remote •
+          Full-time • $130,000 - $175,000</p>
+
+        <div class="mt-5">
+          <p class=" bg-blue-100 w-28 h-10  p-2 rounded-[4px] font-semibold">Not Applied</p>
+          <p class="mt-2 text-gray-400">Build cross-platform mobile applications using React Native. W ork on products
+            used by
+            millions of users
+            worldwide.</p>
+        </div>
+        <div class="mt-5">
+
+          <button id="interview-btn" class="btn btn-outline btn-success">Interview</button>
+          <button id="rejected-btn" class="btn btn-outline btn-error">Rejected</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="shadow-sm p-6 ">
+        <div class="grid grid-cols-2  place-content-between ">
+          <p class="font-semibold"> Mobile First Corp </p>
+          <button id="delet-btn" class="text-right ">delet</button>
+        </div>
+
+        <p class="text-gray-400">React Native Developer</p>
+        <p class="text-gray-400 mt-5">Remote •
+          Full-time • $130,000 - $175,000</p>
+
+        <div class="mt-5">
+          <p class=" bg-blue-100 w-28 h-10  p-2 rounded-[4px] font-semibold">Not Applied</p>
+          <p class="mt-2 text-gray-400">Build cross-platform mobile applications using React Native. W ork on products
+            used by
+            millions of users
+            worldwide.</p>
+        </div>
+        <div class="mt-5">
+
+          <button id="interview-btn" class="btn btn-outline btn-success">Interview</button>
+          <button id="rejected-btn" class="btn btn-outline btn-error">Rejected</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="shadow-sm p-6 ">
+        <div class="grid grid-cols-2  place-content-between ">
+          <p class="font-semibold"> Mobile First Corp </p>
+          <button id="delet-btn" class="text-right ">delet</button>
+        </div>
+
+        <p class="text-gray-400">React Native Developer</p>
+        <p class="text-gray-400 mt-5">Remote •
+          Full-time • $130,000 - $175,000</p>
+
+        <div class="mt-5">
+          <p class=" bg-blue-100 w-28 h-10  p-2 rounded-[4px] font-semibold">Not Applied</p>
+          <p class="mt-2 text-gray-400">Build cross-platform mobile applications using React Native. W ork on products
+            used by
+            millions of users
+            worldwide.</p>
+        </div>
+        <div class="mt-5">
+
+          <button id="interview-btn" class="btn btn-outline btn-success">Interview</button>
+          <button id="rejected-btn" class="btn btn-outline btn-error">Rejected</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="shadow-sm p-6 ">
+        <div class="grid grid-cols-2  place-content-between ">
+          <p class="font-semibold"> Mobile First Corp </p>
+          <button id="delet-btn" class="text-right ">delet</button>
+        </div>
+
+        <p class="text-gray-400">React Native Developer</p>
+        <p class="text-gray-400 mt-5">Remote •
+          Full-time • $130,000 - $175,000</p>
+
+        <div class="mt-5">
+          <p class=" bg-blue-100 w-28 h-10  p-2 rounded-[4px] font-semibold">Not Applied</p>
+          <p class="mt-2 text-gray-400">Build cross-platform mobile applications using React Native. W ork on products
+            used by
+            millions of users
+            worldwide.</p>
+        </div>
+        <div class="mt-5">
+
+          <button id="interview-btn" class="btn btn-outline btn-success">Interview</button>
+          <button id="rejected-btn" class="btn btn-outline btn-error">Rejected</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="shadow-sm p-6 ">
+        <div class="grid grid-cols-2  place-content-between ">
+          <p class="font-semibold"> Mobile First Corp </p>
+          <button id="delet-btn" class="text-right ">delet</button>
+        </div>
+
+        <p class="text-gray-400">React Native Developer</p>
+        <p class="text-gray-400 mt-5">Remote •
+          Full-time • $130,000 - $175,000</p>
+
+        <div class="mt-5">
+          <p class=" bg-blue-100 w-28 h-10  p-2 rounded-[4px] font-semibold">Not Applied</p>
+          <p class="mt-2 text-gray-400">Build cross-platform mobile applications using React Native. W ork on products
+            used by
+            millions of users
+            worldwide.</p>
+        </div>
+        <div class="mt-5">
+
+          <button id="interview-btn" class="btn btn-outline btn-success">Interview</button>
+          <button id="rejected-btn" class="btn btn-outline btn-error">Rejected</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="shadow-sm p-6 ">
+        <div class="grid grid-cols-2  place-content-between ">
+          <p class="font-semibold"> Mobile First Corp </p>
+          <button id="delet-btn" class="text-right ">delet</button>
+        </div>
+
+        <p class="text-gray-400">React Native Developer</p>
+        <p class="text-gray-400 mt-5">Remote •
+          Full-time • $130,000 - $175,000</p>
+
+        <div class="mt-5">
+          <p class=" bg-blue-100 w-28 h-10  p-2 rounded-[4px] font-semibold">Not Applied</p>
+          <p class="mt-2 text-gray-400">Build cross-platform mobile applications using React Native. W ork on products
+            used by
+            millions of users
+            worldwide.</p>
+        </div>
+        <div class="mt-5">
+
+          <button id="interview-btn" class="btn btn-outline btn-success">Interview</button>
+          <button id="rejected-btn" class="btn btn-outline btn-error">Rejected</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="shadow-sm p-6 ">
+        <div class="grid grid-cols-2  place-content-between ">
+          <p class="font-semibold"> Mobile First Corp </p>
+          <button id="delet-btn" class="text-right ">delet</button>
+        </div>
+
+        <p class="text-gray-400">React Native Developer</p>
+        <p class="text-gray-400 mt-5">Remote •
+          Full-time • $130,000 - $175,000</p>
+
+        <div class="mt-5">
+          <p class=" bg-blue-100 w-28 h-10  p-2 rounded-[4px] font-semibold">Not Applied</p>
+          <p class="mt-2 text-gray-400">Build cross-platform mobile applications using React Native. W ork on products
+            used by
+            millions of users
+            worldwide.</p>
+        </div>
+        <div class="mt-5">
+
+          <button id="interview-btn" class="btn btn-outline btn-success">Interview</button>
+          <button id="rejected-btn" class="btn btn-outline btn-error">Rejected</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="shadow-sm p-6 ">
+        <div class="grid grid-cols-2 place-content-between ">
+          <p class="font-semibold"> Mobile First Corp </p>
+          <button id="delet-btn" class="text-right ">delet</button>
+        </div>
+
+        <p class="text-gray-400">React Native Developer</p>
+        <p class="text-gray-400 mt-5">Remote •
+          Full-time • $130,000 - $175,000</p>
+
+        <div class="mt-5">
+          <p class=" bg-blue-100 w-28 h-10  p-2 rounded-[4px] font-semibold">Not Applied</p>
+          <p class="mt-2 text-gray-400">Build cross-platform mobile applications using React Native. W ork on products
+            used by
+            millions of users
+            worldwide.</p>
+        </div>
+        <div class="mt-5">
+
+          <button id="interview-btn" class="btn btn-outline btn-success">Interview</button>
+          <button id="rejected-btn" class="btn btn-outline btn-error">Rejected</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>
